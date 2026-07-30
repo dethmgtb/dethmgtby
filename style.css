@@ -905,6 +905,7 @@ body {
     width:90%;
     margin:0 auto;
     text-align:center;
+    margin-bottom: 20px;
 }
 
 .certifications-section h2{
@@ -934,7 +935,7 @@ body {
 
 .cert-card:hover{
     transform:translateY(-5px);
-    box-shadow:0 12px 25px rgba(0,0,0,.15);
+    box-shadow:0 12px 25px rgba(27, 130, 132, 0.532);
 }
 
 /* Header */
