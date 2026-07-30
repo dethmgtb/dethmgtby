@@ -355,7 +355,7 @@ body {
 /* ABOUT SECTION */
 .about {
   padding: 80px 60px;
-  background: #000000;
+  background:transparent;
   color: #fff;
 }
 
@@ -471,7 +471,7 @@ body {
 /* SKILLS SECTION */
 .skills {
   padding: 80px 60px;
-  background: #000000;
+  background: transparent;
   color: #fff;
 }
 
@@ -566,7 +566,7 @@ body {
 /* PROJECTS SECTION */
 .projects {
   padding: 80px 60px;
-  background: #000;
+  background: transparent;
   color: #fff;
 }
 
@@ -880,21 +880,109 @@ body {
 } */
 
 /* ===========================================
-   EDUCATION
+   EDUCATION TIMELINE
 =========================================== */
 
 .education-section{
-    max-width: 900px;      /* controls education width */
+    max-width:900px;
     width:90%;
-    margin:0 auto 70px;
-    text-align:center;
-    margin-bottom: 80px;
+    margin:0 auto 80px;
+    align-items: center;
+    
 }
 
 .education-section h2{
-    font-size:28px;
-    margin-bottom:30px;
     text-align:center;
+    font-size:28px;
+    margin-bottom:45px;
+}
+
+/* Timeline */
+
+.education-timeline{
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    padding-left: 40px;
+    transform: translateX(40px);
+}
+
+.education-timeline::before{
+    content:"";
+    position:absolute;
+    left:10px;
+    top:0;
+    bottom:0;
+    width:3px;
+    background:#51717b;
+    box-shadow:0 0 10px #628577;
+}
+
+/* Item */
+
+.timeline-item{
+    position:relative;
+    margin-bottom:50px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:-37px;
+    top:8px;
+    width:18px;
+    height:18px;
+    background:#cddbaf;
+    border-radius:50%;
+    box-shadow:0 0 12px #9caf72;
+    border:3px solid #000;
+}
+
+.timeline-content{
+    padding-left:15px;
+}
+
+.timeline-year{
+    display:inline-block;
+    color:#cddbaf;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:8px;
+    letter-spacing:1px;
+}
+
+.timeline-content h3{
+    font-size:22px;
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.timeline-content .sub{
+    color:#cddbaf;
+    margin-bottom:10px;
+    text-align:left;
+}
+
+.timeline-content .desc{
+    color:#ccc;
+    line-height:1.6;
+    text-align:left;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .education-timeline{
+        padding-left:30px;
+    }
+
+    .timeline-dot{
+        left:-27px;
+    }
+
+    .timeline-content h3{
+        font-size:18px;
+    }
 }
 
 /* ===========================================
@@ -925,18 +1013,19 @@ body {
 
 /* Card */
 .cert-card{
-    background:#5b5f51;
+    background:#313437;
     padding:22px;
     border-radius:14px;
     border:1px solid #e1e6d6;
     box-shadow:0 3px 8px rgba(0,0,0,.05);
     transition:.3s;
-    text-align:center;
+    text-align: left;
+    width: 100%;
 }
 
 .cert-card:hover{
     transform:translateY(-5px);
-    box-shadow:0 12px 25px rgba(27, 130, 132, 0.532);
+    box-shadow:0 12px 25px rgba(26, 83, 102, 0.532);
 }
 
 /* Header */
@@ -1014,10 +1103,46 @@ body {
 
 }
 
+/* ===========================================
+   EXPERIENCE
+=========================================== */
+
+.experience{
+    padding:80px 60px;
+    background:transparent;
+    color:#fff;
+}
+
+.experience-section{
+    max-width:900px;
+    width:90%;
+    margin:0 auto;
+}
+
+/* Use the exact same styling as Education */
+.experience-timeline{
+    position:relative;
+    width:75%;
+    margin:0 auto;
+    padding-left:40px;
+    transform:translateX(40px); /* same adjustment you used for education */
+}
+
+.experience-timeline::before{
+    content:"";
+    position:absolute;
+    left:10px;
+    top:0;
+    bottom:0;
+    width:3px;
+    background:#51717b;
+    box-shadow:0 0 10px #628577;
+}
+
 /* CONTACT SECTION */
 .contact {
   padding: 80px 60px;
-  background: #000;
+  background: transparent;
   color: #fff;
 }
 
