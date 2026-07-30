@@ -879,66 +879,125 @@ body {
   }
 } */
 
-/* Education Section */
-.education-section {
-    max-width: 800px;
-    margin: 0 auto 70px;
-    text-align: center;
+/* ===========================================
+   EDUCATION
+=========================================== */
+
+.education-section{
+    max-width:750px;      /* controls education width */
+    width:90%;
+    margin:0 auto 70px;
+    text-align:center;
 }
 
-.education-section h2,
-.certifications-section h2{
-    text-align:center;
+.education-section h2{
     font-size:28px;
     margin-bottom:30px;
+    text-align:center;
 }
 
-/* Certification Section */
+/* ===========================================
+   CERTIFICATIONS
+=========================================== */
+
 .certifications-section{
-    max-width:1200px;
+    max-width:1100px;     /* whole certifications area */
+    width:90%;
     margin:0 auto;
     text-align:center;
 }
 
-/* Two-column certification layout */
-.cert-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
-
-/* Center all card contents */
-.cert-card{
+.certifications-section h2{
+    font-size:28px;
+    margin-bottom:35px;
     text-align:center;
 }
 
-/* Center title + year */
+/* Two-column layout */
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(420px,1fr));
+    gap:30px;
+    justify-content:center;
+}
+
+/* Card */
+.cert-card{
+    background:#5b5f51;
+    padding:22px;
+    border-radius:14px;
+    border:1px solid #e1e6d6;
+    box-shadow:0 3px 8px rgba(0,0,0,.05);
+    transition:.3s;
+    text-align:center;
+}
+
+.cert-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+
+/* Header */
+
 .cert-header{
     display:flex;
-    flex-direction:column;
+    justify-content:space-between;
     align-items:center;
-    gap:8px;
+    margin-bottom:10px;
 }
 
 .cert-header h3{
+    font-size:18px;
+    font-weight:700;
     margin:0;
+    text-align:left;
 }
 
 .cert-year{
-    opacity:.7;
+    font-size:14px;
+    opacity:.8;
+}
+
+/* Text */
+
+.sub{
+    color:#cddbaf;
+    margin:8px 0;
+}
+
+.desc{
+    margin-top:12px;
+    line-height:1.6;
+    font-size:14px;
 }
 
 .cert-link{
-    display:block;
-    margin-top:15px;
-    text-align:center;
+    display:inline-block;
+    margin-top:18px;
+    color:#e1f2cc;
+    text-decoration:none;
+    font-weight:600;
 }
 
-/* Mobile */
-@media(max-width:900px){
+.cert-link:hover{
+    opacity:.75;
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:1000px){
+
     .cert-grid{
         grid-template-columns:1fr;
     }
+
+    .education-section,
+    .certifications-section{
+        width:95%;
+    }
+
 }
 
 /* CONTACT SECTION */
