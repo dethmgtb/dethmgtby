@@ -756,6 +756,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 0 40px;
+  text-align: center;
 }
 
 /* LEFT & RIGHT COLUMN WIDTHS */
@@ -779,6 +780,7 @@ body {
   margin-bottom: 35px;
   border-left: 2px solid #108714;
   padding-left: 18px;
+  text-align: center;
 }
 
 .edu-dot {
@@ -798,11 +800,13 @@ body {
 .sub {
   color: #cddbaf;
   margin: 5px 0;
+  text-align: center;
 }
 
 .year {
   font-size: 14px;
   opacity: 0.7;
+  text-align: center;
 }
 
 .desc {
@@ -810,6 +814,7 @@ body {
   margin-top: 8px;
   opacity: 0.85;
   line-height: 1.5;
+  text-align: center;
 }
 
 /* CERTIFICATION CARDS (RIGHT SIDE) */
@@ -831,17 +836,20 @@ body {
 .cert-header {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .cert-header h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 700;
+  text-align: center;
 }
 
 .cert-year {
   font-size: 14px;
   opacity: 0.7;
+  text-align: center;
 }
 
 .cert-link {
@@ -851,6 +859,7 @@ body {
   text-decoration: none;
   color: #e1f2cc;
   font-weight: 600;
+  text-align: center;
 }
 
 .cert-link:hover {
