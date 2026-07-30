@@ -983,6 +983,16 @@ body {
     opacity:.75;
 }
 
+.certifications-section{
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
 /* ===========================================
    RESPONSIVE
 =========================================== */
