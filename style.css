@@ -963,12 +963,14 @@ body {
 .sub{
     color:#cddbaf;
     margin:8px 0;
+    text-align: left;
 }
 
 .desc{
     margin-top:12px;
     line-height:1.6;
     font-size:14px;
+    text-align: left;
 }
 
 .cert-link{
