@@ -750,16 +750,16 @@ body {
 }
 
 /* LAYOUT WRAPPER FOR BOTH COLUMNS */
-.edu-cert-wrapper {
+/* .edu-cert-wrapper {
   display: flex;
   gap: 50px;
   justify-content: center;
   align-items: flex-start;
   padding: 0 40px;
   text-align: center;
-}
+} */
 
-/* LEFT & RIGHT COLUMN WIDTHS */
+/* LEFT & RIGHT COLUMN WIDTHS
 .education-column,
 .cert-column {
   flex: 1;
@@ -774,7 +774,7 @@ body {
 }
 
 /* EDUCATION ITEMS (LEFT SIDE) */
-.education-item {
+/* .education-item {
   display: flex;
   gap: 12px;
   margin-bottom: 35px;
@@ -815,10 +815,10 @@ body {
   opacity: 0.85;
   line-height: 1.5;
   text-align: center;
-}
+} */
 
 /* CERTIFICATION CARDS (RIGHT SIDE) */
-.cert-card {
+/* .cert-card {
   background: #5b5f51;
   padding: 22px;
   border-radius: 14px;
@@ -864,10 +864,10 @@ body {
 
 .cert-link:hover {
   opacity: 0.7;
-}
+} */
 
 /* RESPONSIVE FIXES */
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .edu-cert-wrapper {
     flex-direction: column;
     align-items: center;
@@ -877,6 +877,68 @@ body {
   .cert-column {
     max-width: 90%;
   }
+} */
+
+/* Education Section */
+.education-section {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.education-section h2,
+.certifications-section h2{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:30px;
+}
+
+/* Certification Section */
+.certifications-section{
+    max-width:1200px;
+    margin:0 auto;
+    text-align:center;
+}
+
+/* Two-column certification layout */
+.cert-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+/* Center all card contents */
+.cert-card{
+    text-align:center;
+}
+
+/* Center title + year */
+.cert-header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+}
+
+.cert-header h3{
+    margin:0;
+}
+
+.cert-year{
+    opacity:.7;
+}
+
+.cert-link{
+    display:block;
+    margin-top:15px;
+    text-align:center;
+}
+
+/* Mobile */
+@media(max-width:900px){
+    .cert-grid{
+        grid-template-columns:1fr;
+    }
 }
 
 /* CONTACT SECTION */
